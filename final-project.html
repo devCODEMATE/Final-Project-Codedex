@@ -41,15 +41,35 @@
         
         <section id="order-form">
           <h2>Place Your Order</h2>
-          
+          <form action="#" method="post">
+
+            <label for="qty-pizza">Chicken Pizza:</label>
+            <input id="qty-pizza" type="number" name="qty_pizza" min="0" value="0"><br><br>
+
+            <label for="qty-burger">Classic Chicken and fries:</label>
+            <input id="qty-burger" type="number" name="qty_burger" min="0" value="0"><br><br>
+
+            <label for="qty-pasta">Chicken with Pasta:</label>
+            <input id="qty-pasta" type="number" name="qty_pasta" min="0" value="0"><br><br>
+
+            <p>Add-ons:</p>
+            <input type="checkbox" id="extra-cheese" name="addon_cheese">
+            <label for="extra-cheese">Extra Cheese</label><br>
+        
+            <input type="checkbox" id="fries" name="addon_fries">
+            <label for="fries">Fries</label><br><br>
+
+        <!-- Special requests -->
+            <label for="special-requests">Special Requests:</label><br>
+            <textarea id="special-requests" name="special_requests" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Submit -->
+            <input type="submit" value="Go Checkout">
+          </form>
         </section>
-
-
-
-
+        
     <footer>
       <p>Made with love by CodeMate in Codédex</p>
     </footer>      
   </body>
-
 </html>
